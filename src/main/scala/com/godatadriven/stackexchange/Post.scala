@@ -33,7 +33,7 @@ object Post {
   def apply(attributes: Map[String,String]): Post =
     apply(attributes("Id").toLong,
           attributes("PostTypeId").toShort,
-          attributes.get("ParentID").map(_.toLong),
+          attributes.get("ParentId").map(_.toLong),
           attributes.get("AcceptedAnswerId").map(_.toLong),
           parseTimestamp(attributes("CreationDate")),
           attributes("Score").toInt,
