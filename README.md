@@ -5,7 +5,7 @@ The [Stack Exchange Network][sen] periodically publishes an [anonymized dump of
 all user-contributed content][dump] via The Internet Archive.
 
 The dump consists of XML files that encode the user data. This project contains
-a Spark job to convert the data into Parquet files, which are easier to use for
+a Spark job to convert the data into parquet files, which are easier to use for
 subsequent processing.
 
 At present only the following sites are converted, but it is trivial to add more:
